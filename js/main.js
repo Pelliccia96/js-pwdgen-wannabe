@@ -13,3 +13,12 @@ console.log("Typology:", typeof userColor);
 
 const userFullInfo21 = document.getElementById("UserInfo");
 userFullInfo21.innerHTML = userFirstName + userLastName + userColor + "21";
+
+let userFullName = userFirstName + userLastName;
+let userPassword = userFullName + userColor + "21";
+
+const paragrafo = document.getElementById("UserDescription");
+paragrafo.innerHTML = `L'utente si chiama ${userFullName} e il suo colore preferito è ${userColor}`;
+
+const password = document.getElementById("Password");
+password.innerHTML = `La Password generata è: <em>${userPassword}</em>`;
